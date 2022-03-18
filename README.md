@@ -16,14 +16,15 @@ Note: this project contains a `.gitignore` file, so that you will only share *so
 4. Launch VS Code and open the local directory
 5. In your local project directory, create a virtual environment and install Django (see next section)
 
-
 ## Install Django in a virtual environment
+
+The following commands create a `venv` virtual environment in your local copy of the project. Open a terminal in your local directory (it can be VS Code integrated terminal), then:
+
 
 ### On Linux or macOS
 
-Open a terminal in your local directory (it can be VS Code integrated terminal), then:
-
 ```bash
+$ cd /path/to/project
 $ python -m venv venv
 $ source venv/bin/activate
 (venv) $ pip install Django
@@ -31,10 +32,32 @@ $ source venv/bin/activate
 
 ### On Windows
 
-Run a Powershell console **as an administrator** (you cannot use VS Code integrated terminal yet), go to the local project directory, then:
-
 ```powershell
+$ cd \path\to\project
 $ py -m venv venv
 $ venv\Scripts\activate
 (venv) $ pip install Django
 ```
+
+Warning: `activate` might not work on Windows, complaining about some "execution policy" matter. In that case, open a powershell console as administrator, run `Set-ExecutionPolicy`, answer `bypass` and `A`.
+
+## Use the virtual environment afterwards
+
+Every time you will use a *new* terminal/console to type python or Django commands, you will need to reactivate the virtual environment by calling the `activate` script. Actually, you need to run the `activate` script if you do not see `(venv)` before the shell prompt.
+
+For instance, every time you restart VS Code to work on the project, you will have to go to the project local directory if needed, and then to activate `venv` :
+
+```bash
+$ cd /path/to/project
+$ source venv/bin/activate
+(venv) $ 
+```
+
+or:
+
+```powershell
+$ cd \path\to\project
+$ venv\Scripts\activate
+(venv) $ 
+```
+
