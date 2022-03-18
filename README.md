@@ -11,8 +11,11 @@ In particular it ignores:
 ## How to use this project
 
 1. Fork and then clone this project (see https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-2. In your local project directory, create a virtual environment and install Django (see next section)
-3. Launch VS Code and open the local directory
+2. Add your teachers as members of the project:
+   1. Go to Settings / Collaborators
+   2. Use Add Collaborator for each teacher (type its GitHub identifier)
+4. In your local project directory, create a virtual environment and install Django (see next section)
+5. Launch VS Code and open the local directory
 
 ## Install Django in a virtual environment
 
