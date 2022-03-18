@@ -39,7 +39,7 @@ $ venv\Scripts\activate
 (venv) $ pip install Django
 ```
 
-Warning: `activate` might not work on Windows, complaining about some "execution policy" matter. In that case, open a powershell console as administrator, run `Set-ExecutionPolicy`, answer `bypass` and `A`.
+Warning: `activate` might not work on Windows, complaining about some "execution policy" matter. In that case, open a powershell console, run `Set-ExecutionPolicy -scope CurrentUser`, answer `bypass` and `A` (yes to all).
 
 ## Use the virtual environment afterwards
 
