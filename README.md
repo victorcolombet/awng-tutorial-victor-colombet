@@ -12,18 +12,18 @@ Note: this project contains a `.gitignore` file, so that you will only share *so
 1. Fork this project:
    1. Click the "Fork" button in the-top right corner of this page
    2. Select your GitHub account; you will be landing in *your* project's GitHub page (`john-doe/awng-tutorial` instead of `EISC-209-AWNG/awng-tutorial`)
-2. *Optionally*, rename the forked project: 
-   1. Go to Settings on your project's GitHub page
-   2. Type a new Repository Name 
-   3. Click the "Rename" button
-3. Add your teachers as members of **your** project:
+2. Add your teachers as members of **your** project:
    1. Go to Settings / Collaborators on your project's GitHub page
    2. Use Add Collaborator for each teacher (type its GitHub identifier)
+3. Rename the forked project so that it clearly identifies you: 
+   1. Go to Settings on your project's GitHub page
+   2. Type the new Repository Name: `awng-tutorial-firstname-lastname`, with *your* name, e.g. `awng-tutorial-john-doe` 
+   3. Click the "Rename" button
 
 At this point, you have your own project on GitHub with an appropriate initial content. Next, you need to get a **working copy** on your computer:
 
 1. Follow the instructions of the [*Cloning your forked repository*](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) section of https://docs.github.com/en/get-started/quickstart/fork-a-repo
-2. Launch VS Code and open the local directory, named `awng-tutorial` or whatever name you chose before cloning
+2. Launch VS Code and open the local directory, named `awng-tutorial-firstname-lastname`
 3. In your local project directory, create a virtual environment and install Django (see next section)
 
 ## Install Django in a virtual environment
