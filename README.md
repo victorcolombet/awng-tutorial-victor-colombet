@@ -39,7 +39,16 @@ $ source venv/bin/activate
 (venv) $ pip install Django
 ```
 
-### On Windows
+### On Windows via Git Bash
+
+```bash
+$ cd /path/to/project
+$ py -m venv venv
+$ source venv/Scripts/activate
+(venv) $ pip install Django
+```
+
+### On Windows via powershell
 
 ```powershell
 $ cd \path\to\project
@@ -54,7 +63,7 @@ Warning: `activate` might not work on Windows, complaining about some "execution
 
 Every time you will use a *new* terminal/console to type python or Django commands, you will need to reactivate the virtual environment by calling the `activate` script. Actually, you need to run the `activate` script if you do not see `(venv)` before the shell prompt.
 
-For instance, every time you restart VS Code to work on the project, you will have to go to the project local directory if needed, and then to activate `venv` :
+For instance, every time you restart VS Code to work on the project, you will have to go to the project local directory if needed, and then to activate `venv`:
 
 ```bash
 $ cd /path/to/project
@@ -62,11 +71,19 @@ $ source venv/bin/activate
 (venv) $ 
 ```
 
-or:
+or on Windows via powershell in VS Code:
 
 ```powershell
 $ cd \path\to\project
 $ venv\Scripts\activate
+(venv) $ 
+```
+
+or on Windows via Git Bash in VS Code:
+
+```bash
+$ cd /path/to/project
+$ source venv/Scripts/activate
 (venv) $ 
 ```
 
